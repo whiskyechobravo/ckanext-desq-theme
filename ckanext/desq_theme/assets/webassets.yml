@@ -1,0 +1,14 @@
+# desq_theme-js:
+#   filter: rjsmin
+#   output: ckanext-desq_theme/%(version)s-desq_theme.js
+#   contents:
+#     - js/desq_theme.js
+#   extra:
+#     preload:
+#       - base/main
+
+# desq_theme-css:
+#   filter: cssrewrite
+#   output: ckanext-desq_theme/%(version)s-desq_theme.css
+#   contents:
+#     - css/desq_theme.css
