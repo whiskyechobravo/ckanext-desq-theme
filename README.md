@@ -1,33 +1,11 @@
-[![Tests](https://github.com//ckanext-desq-theme/workflows/Tests/badge.svg?branch=main)](https://github.com//ckanext-desq-theme/actions)
-
 # ckanext-desq-theme
 
 A custom theme for DESQ.
 
-
 ## Requirements
 
-**TODO:** For example, you might want to mention here which versions of CKAN this
-extension works with.
-
-If your extension works across different versions you can add the following table:
-
-Compatibility with core CKAN versions:
-
-| CKAN version    | Compatible?   |
-| --------------- | ------------- |
-| 2.6 and earlier | not tested    |
-| 2.7             | not tested    |
-| 2.8             | not tested    |
-| 2.9             | not tested    |
-
-Suggested values:
-
-* "yes"
-* "not tested" - I can't think of a reason why it wouldn't work
-* "not yet" - there is an intention to get it working
-* "no"
-
+Tested with CKAN 2.9
+[fork](https://github.com/whiskyechobravo/ckan/tree/desq-2.9.5).
 
 ## Installation
 
@@ -39,14 +17,13 @@ To install ckanext-desq-theme:
 
 1. Activate your CKAN virtual environment, for example:
 
-     . /usr/lib/ckan/default/bin/activate
+    . /usr/lib/ckan/default/bin/activate
 
-2. Clone the source and install it on the virtualenv
+2. Install it on the virtualenv
 
-    git clone https://github.com//ckanext-desq-theme.git
-    cd ckanext-desq-theme
-    pip install -e .
-	pip install -r requirements.txt
+    pip install -e 'git+https://github.com/whiskyechobravo/ckanext-desq-theme.git#egg=ckanext-desq_theme'
+
+   **TODO:** Specify `[requirements]` if `requirements.txt` is not empty.
 
 3. Add `desq-theme` to the `ckan.plugins` setting in your CKAN
    config file (by default the config file is located at
@@ -54,7 +31,7 @@ To install ckanext-desq-theme:
 
 4. Restart CKAN. For example if you've deployed CKAN with Apache on Ubuntu:
 
-     sudo service apache2 reload
+    sudo service apache2 reload
 
 
 ## Config settings
