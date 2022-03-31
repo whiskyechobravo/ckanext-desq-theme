@@ -30,8 +30,3 @@ https://github.com/whiskyechobravo/ckan/tree/desq-2.9.5
    ```bash
    sudo service ckan restart
    ```
-
-
-## License
-
-[AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html)
